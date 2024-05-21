@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #8E8E8E;
+}
+
+.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 600px;
+    height: 920px;
+    border-radius: 10px;
+    line-height: 100px;
+}
+
+
+
+.forms-forms>input{
+    border: none;
+    border-bottom: solid black 1px;
+    width: 345.72px;
+    height: 43.28px;
+}
+
+.lugares{
+    display: flex;
+    flex-direction: row;
+    line-height: 30px;
+}
+
+.lugares-lugares{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.centraliza{
+    display: flex;
+    justify-content: center;
+}
+
+.botao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+#enviar{
+    background-color: #0982FE;
+    width: 345.72px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
