@@ -335,9 +335,21 @@ div>h2{
 }
 
 .passeios-container{
+    background-color: var(--preto);
+    width: 77.9%;
+    height: 92%;
+    border-radius: 10px;
     position: relative;
     margin: 10px;
+    overflow: hidden;
 }
+.passeios-container>img{
+    background-size:contain;
+}
+
+.passeios-container:hover{
+    transform: scale(1.1);
+}    
 
 .centered{
     position: absolute;
@@ -398,11 +410,21 @@ div>h2{
     font-family: var(--fonte);
 }
 
+.community>p{
+    font-size: 17px;
+    font-weight: 600;
+}
+
 .about{
     display: flex;
     flex-direction: column;
     line-height: 30px;
     font-family: var(--fonte);
+}
+
+.about>p{
+    font-size: 17px;
+    font-weight: 600;
 }
 
 .footer-logo{
