@@ -5,6 +5,7 @@
     --cinza: #8E8E8E;
     --branco2: #F0F2F5;
     --azul: #0982FE;
+    --roxo: #A18CD1;
 }
 
 *{
@@ -107,17 +108,66 @@ li:hover{
 }
 
 .image{
-    width: 401.96px;
-    height: 402.46px;
+    width: 100%;
+    height: auto;
+    z-index: 0;
 }
 
 .passeios-titulo{
+    margin-top: 140px;
     text-align: center;
     font-family: var(--fonte);
 }
 
 .passeios{
     display: grid;
+}
+
+.video{
+    margin-top: 50px;
+    background-color: var(--roxo);
+    width: 99%;
+    height: 262.93px;
+}
+
+.video-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.quem-somos{
+    text-align: center;
+}
+
+.quem-somos>h3{
+    font-family: var(--fonte);
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.quem-somos-paragrafo{
+    margin: 0 auto;
+    width: 40%;
+}
+
+.quem-somos-paragrafo>p{
+    font-family: var(--fonte);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.imagens{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagens>div{
+    margin: 0 auto;
 }
 
 .funcionamento{
@@ -286,26 +336,87 @@ div>h2{
 
 .passeios-container{
     position: relative;
-    text-align: center;
+    margin: 10px;
 }
 
 .centered{
     position: absolute;
-    left: 15%;
-    top: 7%;
+    padding-top: 10px;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
     font-family: var(--fonte);
     color: var(--branco2);
+    z-index: 1;
+}
+
+.centered p{
+    margin: 10px;
 }
 
 .centered2{
     position: absolute;
-    bottom: 7%;
-    left: 15%;
+    padding-top: 10px;
+    padding-left: 10px;
+    top: 10;
+    left: 10;
     font-family: var(--fonte);
     color: var(--branco2);
 }
 
-@media(max-width:1001px){
+.centered2 p{
+    margin: 10px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.support{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    font-family: var(--fonte);
+}
+
+.support>p{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.li-footer{
+    font-size: 13px;
+}
+
+.community{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    font-family: var(--fonte);
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    font-family: var(--fonte);
+}
+
+.footer-logo{
+    width: 15%;
+    font-family: var(--fonte);
+    font-size: 10px;
+}
+
+.footer-img{
+    width: 50%;
+    height: 50%;
+}
+
+@media screen and (max-width:1001px) {
     *{
         padding: 0;
         margin: 0;
@@ -356,18 +467,23 @@ div>h2{
         display: flex;
         flex-direction: column;
     }
-
+    .passeios-container{
+        text-align: center;
+        width: 90%;
+    }
     .centered{
-        left: 20%;
+        padding-left: 200px;
     }
-
     .centered2{
-        left: 20%;
+        padding-left: 200px;
     }
-    
     table{
         width: 10%;
         padding: 0 0 0 0;
+    }
+
+    .imagens{
+        display: none;
     }
 
     .tabela-horarios td{
@@ -408,5 +524,50 @@ div>h2{
 
     .forms>p{
         font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .passeios-container {
+        width: 90%; 
+    }
+    .centered{
+        padding-left: 150px;
+    }
+    .centered2{
+        padding-left: 150px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .passeios-container {
+        width: 100%; 
+    }
+    .centered{
+        padding-left: 90px;
+    }
+    .centered2{
+        padding-left: 90px;
+    }
+
+    .video-video>iframe{
+        width: 90%;
+    }
+
+    .footer{
+        margin: 10px;
+        gap: 20px;
+    }
+
+    .footer-logo{
+        width: 50%;
+    }
+
+    .footer-img{
+        width: 100%;
+    }
+    
+    .quem-somos-paragrafo{
+        width: 90%;
     }
 }
